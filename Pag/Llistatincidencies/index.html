@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>· STIIM IT·</title>
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="font-awesome.css">
+	<link rel="stylesheet" href="carousel.css">
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet"
+	 href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+	 integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+	 crossorigin="anonymous">
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+	 integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+	<header>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<a class="navbar-brand" href="..\..\index.html">STIIM</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarCollapse">
+	<ul class="navbar-nav mr-auto">
+		<li class="nav-item active">
+			<a class="nav-link" href="..\..\index.html"><img class="logo" src="images/logo.png" alt=""> <span class="sr-only">(current)</span></a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://agora.xtec.cat/ies-mediterrania-castelldefels/"> <img class="logo_medi" src="images/logo_medi.png"</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link subtittle" href="#" tabindex="-1" >IT technical service</a>
+		</li>
+	</ul>
+	<div class="dropdown">
+		<button type="button" class="btn btn-secondary">Menu</button>
+	<button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split log" data-toggle="dropdown">
+	</button>
+		<div class="dropdown-menu">
+			<a class="dropdown-item" href="..\Incidencies\Incidencies.html">INCIDÈNCIES</a>
+			<a class="dropdown-item" href="..\Quisom\Quisom.html">QUI SOM?</a>
+			<a class="dropdown-item" href="..\Contact\contact.html">CONTACTE</a>
+		</div>
+	</div>
+	<form class="form-inline mt-4 mt-md-0">
+		<a href="log\register.html" class="btn btn-light my-2 my-sm-0 sesion" role="button" type="submit">Tancar la sessió</a>
+	</form>
+	<div class="">
+				<a class="nav-link" href="#"><img class="signup rounded-circle" src="images/signup.png" alt=""> <span class="sr-only">(current)</span></a>
+	</div>
+</div>
+</div>
+</nav>
+</header>
+
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+	<h2 class="featurette-heading text-center">Llistat d'Incidencies Creades</h2>
+
+	<div class="wrap">
+		<ul class="tabs">
+			<li><a href="#tab1"><span class="fa fa-home"></span><span class="tab-text">Mes actual</span></a></li>
+	<li><a href="#tab2"><span class="fa fa-group"></span><span class="tab-text">Mesos anteriors</span></a></li>
+
+</ul>
+
+<div class="secciones">
+	<article id="tab1">
+		<div>
+			<table class="table">
+								 <thead>
+									 		<tr>
+										 			<th>
+															Data
+										 			</th>
+											 <th>
+															ID
+										 			</th>
+											 <th>
+											 				Tècnic
+										 			</th>
+										 		<th>
+											 				Data Actual
+										 			</th>
+										 		<th>
+											 				Estat
+										 			</th>
+										 	</tr>
+								 </thead>
+								 <tbody>
+									 		<tr>
+										 			<td>
+											 				01/06/2020
+										 			</td>
+										 			<td>
+											 				001
+										 			</td>
+										 			<td>
+											 				esperant...
+										 			</td>
+										 			<td>
+											 				../../2020
+										 			</td>
+											 		<td>
+												 			en espera...
+										 			</td>
+									 				</tr>
+									 <tr class="table-active">
+										 			<td>
+											 				01/06/2020
+										 			</td>
+										 			<td>
+											 				002
+										 			</td>
+										 			<td>
+											 				Xavi Jiménez
+										 			</td>
+										 			<td>
+											 				02/06/2020
+										 			</td>
+										 			<td>
+											 				aprovada
+										 			</td>
+									 </tr>
+									 <tr class="table-warning">
+										 			<td>
+											 				28/05/2020
+										 			</td>
+										 			<td>
+											 				003
+										 			</td>
+										 			<td>
+												 			Daniel Carvajal
+										 			</td>
+										 			<td>
+												 			02/06/2020
+										 			</td>
+											 		<td>
+											 				en curs...
+										 			</td>
+									 </tr>
+									 <tr class="table-success">
+										 			<td>
+											 				24/05/2020
+										 			</td>
+										 			<td>
+											 				004
+										 			</td>
+										 			<td>
+											 				Sergio Román
+										 			</td>
+											 		<td>
+												 			02/06/2020
+										 			</td>
+										 			<td>
+											 				Solucionada!
+										 			</td>
+									 </tr>
+									 <tr class="table-danger">
+													 <td>
+														 	25/05/2020
+													 </td>
+													 <td>
+															 005
+													 </td>
+													 <td>
+														 	Mihai Rusu
+													 </td>
+													 <td>
+														 	02/06/2020
+													 </td>
+													 <td>
+														 	No hem trobat solució.
+													 </td>
+									 </tr>
+							 </tbody>
+					 </table>
+
+		</div>
+	</article>
+	<article id="tab2">
+			<table class="table">
+								 <thead>
+													 <tr>
+														 <th>
+																Data
+														 </th>
+														 <th>
+																ID
+														 </th>
+														 <th>
+															 	Tècnic
+														 </th>
+														 <th>
+															 	Data Actual
+														 </th>
+														 <th>
+															 	Estat
+														 </th>
+													 </tr>
+								 </thead>
+								 <tbody>
+									 <tr class="table-active">
+										 <tr class="table-success">
+														 <td>
+															 24/05/2020
+														 </td>
+														 <td>
+															 004
+														 </td>
+														 <td>
+															 Daniel Carvajal
+														 </td>
+														 <td>
+															 02/06/2020
+														 </td>
+														 <td>
+															 Solucionada!
+														 </td>
+										 </tr>
+										 <tr class="table-success">
+														 <td>
+															 24/05/2020
+														 </td>
+														 <td>
+															 004
+														 </td>
+														 <td>
+															 Sergio Román
+														 </td>
+														 <td>
+															 02/06/2020
+														 </td>
+														 <td>
+															 Solucionada!
+														 </td>
+										 </tr>
+
+									 <tr class="table-success">
+														 <td>
+															 24/05/2020
+														 </td>
+														 <td>
+															 004
+														 </td>
+														 <td>
+															 Arnau Ferreres
+														 </td>
+														 <td>
+															 02/06/2020
+														 </td>
+														 <td>
+															 Solucionada!
+														 </td>
+									 </tr>
+									 <tr class="table-danger">
+														 <td>
+															 25/05/2020
+														 </td>
+														 <td>
+															 005
+														 </td>
+														 <td>
+															 Mihai Rusu
+														 </td>
+														 <td>
+															 02/06/2020
+														 </td>
+														 <td>
+															 No hem trobat solució.
+														 </td>
+									 </tr>
+									 <tr class="table-success">
+															 <td>
+																 24/05/2020
+															 </td>
+															 <td>
+																 004
+															 </td>
+															 <td>
+																 Daniel Carvajal
+															 </td>
+															 <td>
+																 02/06/2020
+															 </td>
+															 <td>
+																 Solucionada!
+															 </td>
+									 </tr>
+									 <tr class="table-success">
+															 <td>
+																 24/05/2020
+															 </td>
+															 <td>
+																 004
+															 </td>
+															 <td>
+																 Xavier Jiménez
+															 </td>
+															 <td>
+																 02/06/2020
+															 </td>
+															 <td>
+																 Solucionada!
+															 </td>
+									 </tr>
+									 <tr class="table-success">
+															 <td>
+																 24/05/2020
+															 </td>
+															 <td>
+																 004
+															 </td>
+															 <td>
+																 Sergio Román
+															 </td>
+															 <td>
+																 02/06/2020
+															 </td>
+															 <td>
+																 Solucionada!
+															 </td>
+											</tr>
+										 <tr class="table-danger">
+															 <td>
+																 27/04/2020
+															 </td>
+															 <td>
+																 005
+															 </td>
+															 <td>
+																 Mihai Rusu
+															 </td>
+															 <td>
+																 07/06/2020
+															 </td>
+															 <td>
+																 No hem trobat solució.
+															 </td>
+									 	</tr>
+									 <tr class="table-success">
+															 <td>
+																 24/04/2020
+															 </td>
+															 <td>
+																 004
+															 </td>
+															 <td>
+																 Sergio Román
+															 </td>
+															 <td>
+																 08/06/2020
+															 </td>
+															 <td>
+																 Solucionada!
+															 </td>
+									  </tr>
+									 <tr class="table-success">
+															 <td>
+																 25/04/2020
+															 </td>
+															 <td>
+																 004
+															 </td>
+															 <td>
+																 Izan Andrés
+															 </td>
+															 <td>
+																 07/05/2020
+															 </td>
+															 <td>
+																 Solucionada!
+															 </td>
+									 	</tr>
+									 <tr class="table-success">
+															 <td>
+																 29/04/2020
+															 </td>
+															 <td>
+																 004
+															 </td>
+															 <td>
+																 Mihai Rusu
+															 </td>
+															 <td>
+																 07/05/2020
+															 </td>
+															 <td>
+																 Solucionada!
+															 </td>
+									 </tr>
+									 <tr class="table-danger">
+															 <td>
+																 26/04/2020
+															 </td>
+															 <td>
+																 005
+															 </td>
+															 <td>
+																 Xavi Jiménez
+															 </td>
+															 <td>
+																 06/05/2020
+															 </td>
+															 <td>
+																 No hem trobat solució.
+															 </td>
+									 	</tr>
+									 <tr class="table-success">
+															 <td>
+																 24/04/2020
+															 </td>
+															 <td>
+																 004
+															 </td>
+															 <td>
+																 Arnau Ferreres
+															 </td>
+															 <td>
+																 04/05/2020
+															 </td>
+															 <td>
+																 Solucionada!
+															 </td>
+									  </tr>
+									 <tr class="table-success">
+															 <td>
+																 25/04/2020
+															 </td>
+															 <td>
+																 004
+															 </td>
+															 <td>
+																 Sergio Román
+															 </td>
+															 <td>
+																 02/05/2020
+															 </td>
+															 <td>
+																 Solucionada!
+															 </td>
+									 </tr>
+							 </tbody>
+					 </table>
+	</article>
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+  <footer class="container">
+    <p class="float-right"><a href="#"><img src="images/top2.png" alt=""></a></p>
+    <p> 2020 Stiim &middot;
+        sti@ins-mediterrania.cat
+         &middot;
+         <div class="text-center">
+
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2337.3441877182177!2d1.9725963029823133!3d41.287812497181584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a482c726bd1e5b%3A0x5ef556e5b4197908!2sInstitut%20Mediterr%C3%A0nia!5e1!3m2!1ses!2ses!4v1589534733105!5m2!1ses!2ses" width="300" height="200"></iframe>
+          </div>
+    </p>
+  </footer>
+</body>
+</html>
