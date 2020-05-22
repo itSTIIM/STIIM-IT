@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>· STIIM IT·</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/carousel/">
+
+    <link rel="stylesheet" href="CSS/CSS.css">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet"
+     href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+     crossorigin="anonymous">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+       <link href="CSS/carousel.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="..\..\index.html">STIIM</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="..\..\index.html"><img class="logo" src="images/logo.png" alt=""> <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://agora.xtec.cat/ies-mediterrania-castelldefels/"> <img class="logo_medi" src="images/logo_medi.png"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link subtittle" href="#" tabindex="-1" >IT technical service</a>
+        </li>
+      </ul>
+      <div class="dropdown">
+        <button type="button" class="btn btn-secondary">Menu</button>
+      <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split log" data-toggle="dropdown">
+      </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">INCIDÈNCIES</a>
+          <a class="dropdown-item" href="..\Quisom\Quisom.html">QUI SOM?</a>
+          <a class="dropdown-item" href="..\Contact\contact.html">CONTACTE</a>
+        </div>
+      </div>
+      <form class="form-inline mt-4 mt-md-0">
+        <a href="..\..\log\log.html" class="btn btn-light my-2 my-sm-0 log" role="button" type="submit">Entrada client</a>
+      </form>
+      <form class="form-inline mt-4 mt-md-0">
+        <a href="..\..\log\log.html" class="btn btn-light my-2 my-sm-0" role="button" type="submit">Registrat com a client</a>
+      </form>
+    </div>
+    </nav>
+    </header>
+
+    <div class="container bajo">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-sm">
+                    <form class="form-horizontal" method="post" action="http://forms.melodysoft.com">
+                      <input type="hidden" name="id" value="incidencia_stiim">
+                        <fieldset>
+                            <h1 class="text-center header">Incidencia</h1>
+                            <div class="row justify-content-center">
+                            <div class="form-group column">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                <div class="col-md-12">
+                                    <input id="fname" name="name" type="text" placeholder="Nom i Cognoms" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group column">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                <div class="col-md-12">
+                                    <input id="lname" name="name" type="text" placeholder="Numero Contacte" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group column">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                <div class="col-md-12">
+                                    <input id="email" name="email" type="text" placeholder="Asumpte" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group column">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                <div class="col-md-12">
+                                    <div class="input-group-prepend">
+                                      <select class="form-control">
+                                        <option selected="">Dispositiu</option>
+                                          <option>Ordinador de sobretaula</option>
+                                          <option>Portatil</option>
+                                          <option>Altre</option>
+                                          <option>No es un dispositiu</option>
+                                        </select>
+                                      </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group column">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                <div class="col-md-12">
+                                  <form action="/action_page.php">
+                                    <input type="file" class="custom-file-input" id="customFile" name="filename">
+                                    <label class="custom-file-label" for="customFile">Imagen del problema / incidencia</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group column">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                <div class="col-md-12">
+                                    <textarea class="form-control" id="message" name="message"
+                                    placeholder="Escriu de que tracta l'incidencia i que vols que solucionem." rows="7"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group column">
+                                <div class="col-md-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                </div>
+                            </div>
+                          </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-right"><a href="#"><img src="images/top2.png" alt=""></a></p>
+      <p> 2020 Stiim &middot; E-mail
+          sti@ins-mediterrania.cat
+
+           &middot; Mapa
+           <div class="text-center">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2337.3441877182177!2d1.9725963029823133!3d41.287812497181584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a482c726bd1e5b%3A0x5ef556e5b4197908!2sInstitut%20Mediterr%C3%A0nia!5e1!3m2!1ses!2ses!4v1589534733105!5m2!1ses!2ses" width="300" height="200"></iframe>
+            </div>
+      </p>
+    </footer>
+
+    <script>
+    // Add the following code if you want the name of the file appear on select
+    $(".custom-file-input").on("change", function() {
+      var fileName = $(this).val().split("\\").pop();
+      $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+    });
+    </script>
+
+  </body>
+</html>
